@@ -1,0 +1,25 @@
+@use "../global/config" as *;
+
+body {
+  background-color: var(--clr-neutral100);
+  color: $clr-text;
+  font-family: $ff;
+  font-weight: $semi-bold;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  text-align: initial;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1 {
+  font-size: $heading;
+}
+
+h2 {
+  font-size: $sub-heading;
+}

@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap");
+
+$ff: "Figtree", sans-serif;
+$semi-bold: 600;
+$extra-bold: 800;
+
+$heading: clamp(1.875rem, 0.9821rem + 2.381vw, 3.125rem);
+$sub-heading: clamp(1.125rem, 2rem + -1.1667vw, 1.5625rem);
+
+:root {
+  --clr-primary: hsl(47, 88%, 63%);
+  --clr-neutral100: hsl(0, 0%, 100%);
+  --clr-neutral200: hsl(0, 0%, 50%);
+  --clr-neural300: hsl(0, 0%, 7%);
+}
+
+$clr-bg: var(--clr-neutral100);
+$clr-text: var(--clr-neural300);
