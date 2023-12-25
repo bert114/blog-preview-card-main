@@ -11,16 +11,17 @@ main {
   min-height: 100vh;
   display: grid;
   place-items: center;
+  padding: 2rem 0;
 
   .container {
     background-color: $clr-bg;
     padding: 1.4rem;
     border-radius: var(--border-radius);
-    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
-      rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+    min-height: 515px;
+    box-shadow: 10px 10px $clr-text;
 
     > picture img {
-      --boder-radius: 10px;
+      --border-radius: 10px;
       border-radius: var(--border-radius);
     }
   }
@@ -28,26 +29,27 @@ main {
   button {
     --border-radius: 6px;
     background-color: var(--clr-primary);
-    font-size: 13px;
+    font-size: clamp(0.8125rem, 0.7679rem + 0.119vw, 0.875rem);
     font-weight: $extra-bold;
     padding: 0.3rem 0.8rem;
     border-radius: var(--border-radius);
-    margin: 1.5rem 0 0.8rem 0;
+    margin: 1.6rem 0 1rem 0;
   }
 
   section > :nth-child(2) {
-    font-size: 12px;
+    font-size: clamp(0.75rem, 0.6607rem + 0.2381vw, 0.875rem);
     color: var(--clr-neutral200);
   }
 
   h1 {
-    margin: 1rem 0;
-    font-size: 20px;
+    margin: 1.3rem 0 1.3rem 0;
+    font-size: 24px;
   }
 
   p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.7rem;
     color: var(--clr-neutral200);
+    line-height: 1.4;
   }
 
   .flex {
@@ -58,6 +60,15 @@ main {
 
     img {
       width: 30px;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  main {
+    font-size: 16px;
+    p {
+      width: 96%;
     }
   }
 }
