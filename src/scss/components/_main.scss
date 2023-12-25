@@ -1,6 +1,76 @@
 @use "../global/config" as *;
 @use "../global/class" as *;
+body {
+  padding-bottom: 200vh;
+}
 
 :root {
   --border-radius: 16px;
+  font-size: 62.5%;
+}
+
+main {
+  background-color: var(--clr-primary);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+
+  .container {
+    background-color: var(--clr-neutral100);
+    padding: 2.3rem;
+
+    border-radius: 0.9em;
+    // min-height: 480px;
+  }
+
+  picture img {
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  section {
+    > :nth-child(2) {
+      font-size: 12px;
+
+      margin-bottom: 1.3em;
+    }
+  }
+
+  button {
+    font-weight: $extra-bold;
+    font-size: 1rem;
+    margin: 2em 0 1.5em 0;
+    background-color: var(--clr-primary);
+    padding: 0.6em 1.6em;
+    border-radius: 6px;
+  }
+
+  h1 {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+
+  p {
+    line-height: 1.2;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: $extra-bold;
+    gap: 1em;
+    margin-top: 1.3em;
+
+    img {
+      width: 30px;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 20px;
+  }
 }

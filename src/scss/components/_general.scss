@@ -16,10 +16,7 @@ button {
   -webkit-tap-highlight-color: transparent;
 }
 
-h1 {
-  font-size: $heading;
-}
-
-h2 {
-  font-size: $sub-heading;
+p {
+  opacity: 0.8;
+  font-size: 14px;
 }
