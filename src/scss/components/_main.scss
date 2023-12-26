@@ -19,6 +19,8 @@ main {
     border-radius: var(--border-radius);
     min-height: 515px;
     box-shadow: 10px 10px $clr-text;
+    display: grid;
+    justify-content: space-between;
 
     > picture img {
       --border-radius: 10px;
@@ -50,6 +52,7 @@ main {
     margin-bottom: 1.7rem;
     color: var(--clr-neutral200);
     line-height: 1.4;
+    width: 96%;
   }
 
   .flex {
@@ -67,8 +70,5 @@ main {
 @media (min-width: 600px) {
   main {
     font-size: 16px;
-    p {
-      width: 96%;
-    }
   }
 }
