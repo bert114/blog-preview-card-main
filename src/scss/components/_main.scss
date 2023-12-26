@@ -19,6 +19,8 @@ main {
     border-radius: var(--border-radius);
     min-height: 515px;
     box-shadow: 10px 10px $clr-text;
+    display: grid;
+    justify-content: space-between;
 
     > picture img {
       --border-radius: 10px;
